@@ -11,15 +11,15 @@ export default async function University(){
     }
 
     return (
-        <div>
-            <h1>Lista de Universidades</h1>
-            <table>
-                <tbody> 
-                    {universities}
+        <div className="container mx-auto py-8 flex flex-col items-center justify-center min-h-screen">
+            <h1 className="text-3xl font-bold mb-6 text-center">Lista de Universidades</h1>
+            <div className="rounded-lg border shadow-sm bg-background w-full max-w-3xl">
+            <table className="w-full text-sm">
+                <tbody className="text-center">
+                {universities}
                 </tbody>
-            
             </table>
-            
+            </div>
         </div>
     )
 }
